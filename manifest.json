@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Unlimited DeepL Pro",
+    "description": "Lift the daily translation limit for login accounts",
+    "version": "1.0",
+    "action": {
+        "default_icon": "default_icon.png"
+    },
+    "content_scripts": [{
+        "js": ["scripts/content.js"],
+        "matches": [
+          "https://www.deepl.com/translator/*",
+          "http://www.deepl.com/translator/*"
+        ]
+    }]
+  }
